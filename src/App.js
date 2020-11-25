@@ -196,15 +196,9 @@ function App() {
   }
 
   useEffect(()=>{
-    // DrawChesBoard(8);
-    // setTxtSLKetQua(txtSLKetQua);
+    setTxtNum(4);
+    DrawChesBoard(4);
   },[])
- 
-  const logFileText = async file => {
-    const response = await fetch(file)
-    const text = await response.text()
-    console.log(text)
-}
      
   return (
     <div
