@@ -10,7 +10,6 @@ import Button from '@material-ui/core/Button'
 import { configure } from '@testing-library/react';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -61,10 +60,6 @@ function App() {
 
   const [arrKetQua,setArrSLKetQua] = useState([]);
   const [arrMess,setMess] = useState("");
-
-
-
-
   
 
   function Try_now(i)
@@ -144,6 +139,8 @@ function App() {
   useEffect(()=>{
   soCach = 0;
   });
+
+
   function DrawChesBoard(num)
   {
     if(num == "2" || num == "3")
